@@ -4,6 +4,7 @@ import { onMounted } from 'vue';
 /**
  * Entendiendo serviceWorkers🧮
  * https://developer.chrome.com/docs/workbox/caching-strategies-overview
+ * https://web.dev/articles/offline-fallback-page?hl=es
  *
  */
 

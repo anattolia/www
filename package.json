@@ -1,6 +1,6 @@
 {
   "name": "enflujo-plantilla-vite-vue",
-  "packageManager": "yarn@4.4.1",
+  "packageManager": "yarn@4.5.3",
   "version": "0.0.2",
   "author": "Laboratorio EnFlujo <enflujo@uniandes.edu.co>",
   "license": "MIT",
