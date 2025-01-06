@@ -29,8 +29,8 @@ onMounted(async () => {
       <div></div>
     </div>
     <div id="contenedorNodos">
-    <div v-for="web in listaWebs" class="nodo">{{  }}</div>
-</div>
+      <div v-for="web in listaWebs" class="nodo">{{}}</div>
+    </div>
   </main>
 </template>
 
@@ -42,34 +42,34 @@ main {
   background-color: #e6ccff;
   margin: 0;
   min-height: 100vh;
-  font-family: "Ubuntu", serif;
+  font-family: 'Ubuntu', serif;
   font-weight: 300;
 }
 #contenedorInicial {
 }
 
 #contenedorNodos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3em;
-    width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em;
+  width: 80vw;
 }
 
 .nodo {
-    width: 100px;
-    height: 150px;
-    //border-radius: 50%;
-    //border: white 3px solid;
-    margin: 2em 1.5em;
-    background-image: url('puerta.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 100px;
+  height: 150px;
+  //border-radius: 50%;
+  //border: white 3px solid;
+  margin: 2em 1.5em;
+  background-image: url('puerta.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 
-    &:hover {
-      background-image: url('flor.png');
-    }
+  &:hover {
+    background-image: url('flor.png');
+  }
 }
 
 @media screen and (min-width: $minTablet) {
