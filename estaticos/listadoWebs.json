@@ -1,0 +1,100 @@
+[
+    {
+       "nombre":"Internet Archive",
+       "url":"https://archive.org/",
+       "descripcionEsp":"Biblioteca digital. Uno de los proyectos más potentes de internet",
+       "descripcionEng":"Digital library. One of the most powerful projects on the Internet",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Radiooooo",
+       "url":"https://app.radiooooo.com/",
+       "descripcionEsp":"Máquina del tiempo musical",
+       "descripcionEng":"Musical time machine",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Proyecto Idis",
+       "url":"https://proyectoidis.org/",
+       "descripcionEsp":"Un mapeo de referentes clave en el diseño de imagen y sonido",
+       "descripcionEng":"A mapping of key references in image and sound design",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Rhizome",
+       "url":"https://rhizome.org/",
+       "descripcionEsp":"Núcleo internacional de arte de nuevos medios desde 1996",
+       "descripcionEng":"International hub for new media art since 1996",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Cyber-feminism Index",
+       "url":"https://cyberfeminismindex.com/",
+       "descripcionEsp":"Investigación sobre el activismo tecnocrático radical en una variedad de medios",
+       "descripcionEng":"Research about radical techno-critical activism in a variety of media",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Booooooom",
+       "url":"https://www.booooooom.com/",
+       "descripcionEsp":"Plataforma global (?) sobre arte y cultura",
+       "descripcionEng":"Global arts & culture platform",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Experiments with Google",
+       "url":"https://experiments.withgoogle.com/experiments",
+       "descripcionEsp":"Experimentos sobre arte, tecnología, diseño y cultura patrocinados por Google",
+       "descripcionEng":"Experiments about art, technology, design and culture sponsored by Google",
+       "tipo":"archivo"
+    },
+    {
+       "nombre":"Are.na",
+       "url":"https://www.are.na/",
+       "descripcionEsp":"'playlists de ideas', 'palacio de la memoria', colecciones hermosas",
+       "descripcionEng":"'playlists, but for ideas', 'Internet memory palace', beautiful collections",
+       "tipo":"herramienta"
+    },
+    {
+       "nombre":"Cornell Lab of Ornithology",
+       "url":"https://www.birds.cornell.edu/home/",
+       "descripcionEsp":"Mucho sobre pajaritos",
+       "descripcionEng":"A lot about birds",
+       "tipo":"aprender"
+    },
+    {
+       "nombre":"NASA",
+       "url":"https://www.nasa.gov/",
+       "descripcionEsp":"La página de la NASA",
+       "descripcionEng":"NASA's website",
+       "tipo":"aprender"
+    },
+    {
+       "nombre":"The Book of Shaders",
+       "url":"https://thebookofshaders.com/",
+       "descripcionEsp":"Una guía paso a paso a través del universo abstracto y complejo de los 'Fragment Shaders' escrita por Patricio Gonzáles Vivo",
+       "descripcionEng":"A gentle step-by-step guide through the abstract and complex universe of Fragment Shaders by Patricio Gonzáles Vivo",
+       "tipo":"aprender"
+    },
+    {
+       "nombre":"Science and cooking lecture series",
+       "url":"https://thebookofshaders.com/",
+       "descripcionEsp":"Clases sobre ciencia y cocina de Harvard",
+       "descripcionEng":"Science and cooking lecture series by Harvard",
+       "tipo":"aprender"
+    },
+    {
+       "nombre":"Feminist Principles of the Internet",
+       "url":"https://www.feministinternet.net/",
+       "descripcionEsp":"Principios para una Internet feminista",
+       "descripcionEng":"Principles for a feminist Internet",
+       "tipo":"aprender"
+    },
+    {
+       "nombre":"Chia Amisola",
+       "url":"https://chia.design/",
+       "descripcionEsp":"Chia Amisola: artista",
+       "descripcionEng":"Chia Amisola: artist",
+       "tipo":"artista"
+    }
+ ]

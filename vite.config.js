@@ -1,14 +1,33 @@
+import { fileURLToPath, URL } from 'url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/www/',
   plugins: [vue()],
-  clearScreen: false,
   build: {
     outDir: 'publico',
     assetsDir: 'estaticos',
     sourcemap: true,
+    rollupOptions: {
+      input: {
+        principal: resolve(__dirname, 'index.html'),
+        otras: resolve(__dirname, '404.html'),
+      },
+    },
   },
   publicDir: 'estaticos',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 });
