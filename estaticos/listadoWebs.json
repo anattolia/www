@@ -223,5 +223,12 @@
     "descripcionEsp": "Conectando personas, proyectos y protocolos para construir una web descentralizada",
     "descripcionEng": "Connecting people, projects and protocols to build a decentralized web",
     "tipo": ["community"]
+  },
+  {
+    "nombre": "Milpamérica",
+    "url": "https://milpamerica.org/",
+    "descripcionEsp": "Semillero de Futuros Ancestrales",
+    "descripcionEng": "Seedbed of Ancestral Futures",
+    "tipo": ["community"]
   }
 ]

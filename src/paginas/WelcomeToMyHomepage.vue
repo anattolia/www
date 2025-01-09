@@ -25,8 +25,8 @@ onMounted(async () => {
   <main>
     <!--  <h1>welcome to my homepage</h1> -->
     <div id="contenedorInicial">
-      <div><p>Esta es una web "excéntrica"</p></div>
-      <div></div>
+      <div class="columna"><p>Esta es una web "excéntrica"</p></div>
+      <div class="columna"><p>This is an excentric website</p></div>
     </div>
     <div id="contenido">
       <div id="contenedorNodos">
@@ -63,6 +63,17 @@ main {
 }
 #contenedorInicial {
   display: none;
+ // display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  left: 21vw;
+  padding: 5em 0;
+  position: absolute;
+  width: 50vw;
+
+  .columna {
+    background-color: #ffffff;
+  }
 }
 
 #contenido {
@@ -98,7 +109,7 @@ main {
     margin-bottom: 0.5em;
     border-bottom: 1px solid white;
     color: white;
-    // list-style: square;
+    //list-style: square;
     display: flex;
     justify-content: space-between;
   }
@@ -125,48 +136,39 @@ main {
   width: 116px;
   height: 120px;
   //border-radius: 50%;
-  //border: white 3px solid;
-  margin: 2em 1.5em;
+  //border: white 1px solid;
+  margin: 1em 0.7em;
   background-image: url('puertabold.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 
-  // background-color: #ffe876;
-  padding: 1em;
-  // border-radius: 50%;
-
   &.artist {
-    //  background-image: url('p2.png');
     &:hover {
       background-image: url('200.webp');
     }
   }
 
   &.archive {
-    //  background-image: url('p3.png');
     &:hover {
       background-image: url('heart.png');
     }
   }
 
   &.gaze {
-    //  background-image: url('p4.png');
     &:hover {
       background-image: url('200.webp');
     }
   }
 
   &.community {
-    //  background-image: url('p5.png');
     &:hover {
       background-image: url('200.webp');
     }
   }
 
   &.gaze {
-    // background-image: url('p6.png');
     &:hover {
       background-image: url('200.webp');
     }
