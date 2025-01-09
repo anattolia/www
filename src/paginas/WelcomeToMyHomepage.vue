@@ -23,21 +23,23 @@ onMounted(async () => {
 
 <template>
   <main>
-   <!--  <h1>welcome to my homepage</h1> -->
+    <!--  <h1>welcome to my homepage</h1> -->
     <div id="contenedorInicial">
       <div><p>Esta es una web "excéntrica"</p></div>
       <div></div>
     </div>
     <div id="contenido">
-    <div id="contenedorNodos">
-      <a v-for="web in listaWebs" class="nodo" :class="web.tipo[0]" :href="web.url" target="_blank"></a>
+      <div id="contenedorNodos">
+        <a v-for="web in listaWebs" class="nodo" :class="web.tipo[0]" :href="web.url" target="_blank"></a>
+      </div>
+      <div id="contenedorLista">
+        <ul>
+          <li v-for="web in listaWebs" class="">
+            <a :href="web.url">{{ web.nombre }} </a> <span v-for="tipo in web.tipo" class="tipo">{{ tipo }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="contenedorLista">
-      <ul>
-      <li v-for="web in listaWebs" class="" ><a :href="web.url">{{ web.nombre }} </a> <span v-for="tipo in web.tipo">{{ tipo }}</span></li>
-    </ul>
-    </div>
-  </div>
   </main>
 </template>
 
@@ -54,10 +56,10 @@ main {
   font-family: 'Ubuntu', serif;
   font-weight: 300;
   background-attachment: fixed;
-   // background-blend-mode: exclusion;
-    background-size: cover;
-    //background-blend-mode: lighten;
-    background-color: #ff0000;
+  // background-blend-mode: exclusion;
+  background-size: cover;
+  //background-blend-mode: lighten;
+  background-color: #ff0000;
 }
 #contenedorInicial {
   display: none;
@@ -65,55 +67,58 @@ main {
 
 #contenido {
   display: flex;
-//  background-color: #3b3e3956;
+  //  background-color: #3b3e3956;
 }
 
 #contenedorNodos {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5vw;
-    padding: 3em;
-    width: 69vw;
+  padding: 3em;
+  width: 69vw;
 }
 
 #contenedorLista {
- // font-family: Courier New, Courier, monospace;
- font-family: "Doto", serif;
+  // font-family: Courier New, Courier, monospace;
+  font-family: 'Doto', serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "ROND" 0;
-    font-size: .8em;
-    background-color: #ff52008f;
-   // background-color: #32499487;
-    margin: 4em;
-    border-radius: 15px;
-    height: fit-content;
-    margin: 5em 5vw;
-    padding: 3em;
-    width: 22vw;
-li {
-  margin-bottom: .5em;
-  border-bottom: 1px solid white;
+  font-variation-settings: 'ROND' 0;
+  font-size: 0.8em;
+  background-color: #ff52008f;
+  // background-color: #32499487;
+  margin: 4em;
+  border-radius: 15px;
+  height: fit-content;
+  margin: 5em 5vw;
+  padding: 3em;
+  width: 22vw;
+  li {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid white;
     color: white;
-   // list-style: square;
+    // list-style: square;
     display: flex;
     justify-content: space-between;
-}
-a {
-  color: rgb(24, 24, 24);
-  font-weight: 600;
-}
-a:visited {
-  color: white;
-  font-weight: 400;
-}
-a:hover {
-  color: #baffe7;
+  }
+  a {
+    color: rgb(24, 24, 24);
+    font-weight: 600;
+    flex-basis: 65%;
+  }
+  a:visited {
+    color: white;
+    font-weight: 400;
+  }
+  a:hover {
+    color: #baffe7;
     text-shadow: 1px 1px 1px #000000;
     font-weight: 900;
-}
+  }
+  .tipo {
+    font-size: 0.9em;
+  }
 }
 
 .nodo {
@@ -122,51 +127,50 @@ a:hover {
   //border-radius: 50%;
   //border: white 3px solid;
   margin: 2em 1.5em;
- background-image: url('puertabold.png');
+  background-image: url('puertabold.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  
-   // background-color: #ffe876;
-    padding: 1em;
-   // border-radius: 50%;
+
+  // background-color: #ffe876;
+  padding: 1em;
+  // border-radius: 50%;
 
   &.artist {
-  //  background-image: url('p2.png');
+    //  background-image: url('p2.png');
     &:hover {
-    background-image: url('200.webp');
-  }
+      background-image: url('200.webp');
+    }
   }
 
   &.archive {
-  //  background-image: url('p3.png');
+    //  background-image: url('p3.png');
     &:hover {
-    background-image: url('heart.png');
-  }
+      background-image: url('heart.png');
+    }
   }
 
   &.gaze {
-  //  background-image: url('p4.png');
+    //  background-image: url('p4.png');
     &:hover {
-    background-image: url('200.webp');
-  }
+      background-image: url('200.webp');
+    }
   }
 
   &.community {
-  //  background-image: url('p5.png');
+    //  background-image: url('p5.png');
     &:hover {
-    background-image: url('200.webp');
-  }
+      background-image: url('200.webp');
+    }
   }
 
-    &.gaze {
-   // background-image: url('p6.png');
+  &.gaze {
+    // background-image: url('p6.png');
     &:hover {
-    background-image: url('200.webp');
+      background-image: url('200.webp');
+    }
   }
-  }
- 
 }
 
 @media screen and (min-width: $minTablet) {

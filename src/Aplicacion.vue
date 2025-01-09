@@ -4,8 +4,7 @@ import Hola from './componentes/Hola.vue';
 </script>
 
 <template>
-
-<RouterView />
+  <RouterView />
 </template>
 
 <style lang="scss">
