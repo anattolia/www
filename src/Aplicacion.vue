@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
-import Hola from './componentes/Hola.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
