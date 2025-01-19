@@ -1,8 +1,22 @@
 <script setup lang="ts">
+/* POR HACER: 
+- Probar otras fuentes para los textos
+- Menú con info
+- A cada enlace asignarle un gif?
+- Ir haciendo aparecer las puertas?
+- enlaces: https://www.welcometomyhomepage.net/about-residency
+- https://www.welcometomyhomepage.net/apply
+*/
+
 import { onMounted, ref, Ref } from 'vue';
 import type { Web } from '../utilidades/tipos';
 
 const listaWebs: Ref<Web[]> = ref([]);
+const botonAnterior: Ref<HTMLElement | undefined> = ref(undefined);
+const botonSiguiente: Ref<HTMLElement | undefined> = ref(undefined);
+const colEsp: Ref<HTMLElement | undefined> = ref(undefined);
+const colEng: Ref<HTMLElement | undefined> = ref(undefined);
+const contenedorInicial: Ref<HTMLElement | undefined> = ref(undefined);
 
 const textosEspInicio = [
   'Este es un sitio excéntrico, un sitio que sale de sí mismo.',
@@ -82,6 +96,7 @@ const textosEngInicio = [
   'it is not "totally" in itself,',
   '"it is" in its relationship with others.',
 ];
+let frase = 1;
 
 async function cargarDatosWebs(ruta: string) {
   const peticion = await fetch(`${import.meta.env.BASE_URL}${ruta}`).then((res) => res.json());
@@ -93,9 +108,33 @@ async function cargarDatosWebs(ruta: string) {
   return peticion as Web[];
 }
 
+function cambiarTexto(boton: string, i: number) {
+  if (boton === 'anterior' && i >= 0) {
+    console.log(i);
+    if (!colEsp.value || !colEng.value) return;
+    colEsp.value.innerText = textosEspInicio[i];
+    colEng.value.innerText = textosEngInicio[i];
+    frase--;
+  }
+  if (boton === 'siguiente' && i < textosEngInicio.length) {
+    if (!colEsp.value || !colEng.value) return;
+    colEsp.value.innerText = textosEspInicio[i];
+    colEng.value.innerText = textosEngInicio[i];
+    console.log(i);
+    frase++;
+  } else if (boton === 'siguiente' && i === textosEngInicio.length) {
+    if (!contenedorInicial.value) return;
+    contenedorInicial.value.style.display = 'none';
+  }
+}
+
+//function revelarPuerta() {}
+
 onMounted(async () => {
   listaWebs.value = await cargarDatosWebs('listadoWebs.json');
-
+  if (!colEsp.value || !colEng.value) return;
+  colEsp.value.innerText = textosEspInicio[0];
+  colEng.value.innerText = textosEngInicio[0];
   console.log(listaWebs.value);
 });
 </script>
@@ -103,17 +142,19 @@ onMounted(async () => {
 <template>
   <main>
     <!--  <h1>welcome to my homepage</h1> -->
-    <div id="contenedorInicial">
-      <div ref="anterior"><</div>
-      <div>
-        <div class="columna"><p>Esta es una web "excéntrica"</p></div>
-        <div class="columna"><p>This is an excentric website</p></div>
+    <div ref="contenedorInicial" id="contenedorInicial">
+      <div ref="botonAnterior" class="boton" @click="cambiarTexto('anterior', frase)"><</div>
+      <div id="contenedorColumnas">
+        <div class="columna" ref="colEsp"></div>
+        <div class="columna" ref="colEng"></div>
       </div>
-      <div ref="siguiente">></div>
+      <div ref="botonSiguiente" class="boton" @click="cambiarTexto('siguiente', frase)">></div>
     </div>
     <div id="contenido">
       <div id="contenedorNodos">
-        <a v-for="web in listaWebs" class="nodo" :class="web.tipo[0]" :href="web.url" target="_blank"></a>
+        <a v-for="web in listaWebs" class="nodo" :class="web.tipo[0]" :href="web.url" target="_blank">
+          <p class="descripcionPuerta">{{ web.descripcionEng }}</p>
+        </a>
       </div>
       <div id="contenedorLista">
         <ul>
@@ -145,28 +186,44 @@ main {
   background-color: #ff0000;
 }
 #contenedorInicial {
-  // font-family: 'Doto', serif;
-  background: #f0ffffa1;
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-  left: 26vw;
-  padding: 2em 0;
-  position: absolute;
-  width: 24vw;
   align-items: center;
-  top: 11vh;
   border-radius: 15px;
-  box-shadow: white 6px 7px 6px;
+  display: flex;
+  //font-family: Doto, serif;
+  font-family: monospace;
+  font-size: 0.9em;
+  height: -moz-fit-content;
+  justify-content: space-between;
+  left: 4vw;
+  padding: 2em 0;
+  position: fixed;
+  top: 0vh;
+  width: 63vw;
+
+  #contenedorColumnas {
+    display: flex;
+  }
 
   .columna {
-    background-color: #ffffff63;
-    //flex-basis: 40%;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #fff;
+    font-size: 1.1em;
+    margin: 1.5em 1em;
     padding: 1px 1em;
-    margin: 0.7em;
-    border-radius: 15px;
-    /* text-shadow: 1px 1px white; */
-    box-shadow: white 2px 2px 3px;
+    text-align: center;
+    width: 23vw;
+  }
+
+  .boton {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    padding: 0.5em 0.7em;
+    border-radius: 50%;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -179,8 +236,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5vw;
-  padding: 3em;
-  width: 69vw;
+  padding: 8em 3em;
+  width: 75vw;
 }
 
 #contenedorLista {
@@ -229,6 +286,7 @@ main {
 .nodo {
   width: 116px;
   height: 120px;
+  border-radius: 16px;
   //border-radius: 50%;
   //border: white 1px solid;
   margin: 1em 0.7em;
@@ -238,7 +296,30 @@ main {
   background-repeat: no-repeat;
   cursor: pointer;
 
-  &.artist {
+  .descripcionPuerta {
+    background-color: rgba(255, 82, 0, 0.561);
+    border-radius: 16px;
+    color: #fff;
+    display: block;
+    font-family: Doto, serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    height: 116px;
+    width: 120px;
+  }
+
+  &:hover {
+    background-image: none;
+    .descripcionPuerta {
+      opacity: 1;
+    }
+  }
+
+  /* &.artist {
     &:hover {
       background-image: url('/estaticos/200.webp');
     }
@@ -258,7 +339,7 @@ main {
 
   &.community {
     &:hover {
-      background-image: url('/estaticos/200.webp');
+      background-image: url('/estaticos/synchronized_cats.gif');
     }
   }
 
@@ -266,7 +347,7 @@ main {
     &:hover {
       background-image: url('/estaticos/200.webp');
     }
-  }
+  } */
 }
 
 @media screen and (min-width: $minTablet) {

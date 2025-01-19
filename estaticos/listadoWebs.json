@@ -3,7 +3,7 @@
     "nombre": "Internet Archive",
     "url": "https://archive.org/",
     "descripcionEsp": "Biblioteca digital. Uno de los proyectos más potentes de internet",
-    "descripcionEng": "Digital library. One of the most powerful projects on the Internet",
+    "descripcionEng": "Digital library. Collective memory",
     "tipo": ["archive"]
   },
   {
@@ -31,7 +31,7 @@
     "nombre": "Cyber-feminism Index",
     "url": "https://cyberfeminismindex.com/",
     "descripcionEsp": "Investigación sobre el activismo tecnocrático radical en una variedad de medios",
-    "descripcionEng": "Research about radical techno-critical activism in a variety of media",
+    "descripcionEng": "Research about radical techno-critical activism",
     "tipo": ["archive"]
   },
   {
@@ -45,14 +45,14 @@
     "nombre": "Experiments with Google",
     "url": "https://experiments.withgoogle.com/experiments",
     "descripcionEsp": "Experimentos sobre arte, tecnología, diseño y cultura patrocinados por Google",
-    "descripcionEng": "Experiments about art, technology, design and culture sponsored by Google",
+    "descripcionEng": "Experiments about art, technology, design and culture",
     "tipo": ["archive"]
   },
   {
     "nombre": "Are.na",
     "url": "https://www.are.na/",
     "descripcionEsp": "'playlists de ideas', 'palacio de la memoria', colecciones hermosas",
-    "descripcionEng": "'playlists, but for ideas', 'Internet archive palace', beautiful collections",
+    "descripcionEng": "'playlists, but for ideas', beautiful collections",
     "tipo": ["poetics"]
   },
   {
@@ -73,7 +73,7 @@
     "nombre": "The Book of Shaders",
     "url": "https://thebookofshaders.com/",
     "descripcionEsp": "Una guía paso a paso a través del universo abstracto y complejo de los 'Fragment Shaders' escrita por Patricio Gonzáles Vivo",
-    "descripcionEng": "A gentle step-by-step guide through the abstract and complex universe of Fragment Shaders by Patricio Gonzáles Vivo",
+    "descripcionEng": "Step-by-step guide through the universe of Fragment Shaders",
     "tipo": ["learning"]
   },
   {
@@ -214,7 +214,7 @@
     "nombre": "COMPOST Magazine",
     "url": "https://three.compost.digital/",
     "descripcionEsp": "Revista que publica textos y obras que exploran la web como un bien común digital",
-    "descripcionEng": "A magazine publishing text and multimedia works that explore the web as a digital commons",
+    "descripcionEng": "A magazine that explore the web as a digital commons",
     "tipo": ["community"]
   },
   {
