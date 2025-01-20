@@ -4,105 +4,105 @@
     "url": "https://archive.org/",
     "descripcionEsp": "Biblioteca digital. Uno de los proyectos más potentes de internet",
     "descripcionEng": "Digital library. Collective memory",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Radiooooo",
     "url": "https://app.radiooooo.com/",
     "descripcionEsp": "Máquina del tiempo musical",
     "descripcionEng": "Musical time machine",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Proyecto Idis",
     "url": "https://proyectoidis.org/",
     "descripcionEsp": "Un mapeo de referentes clave en el diseño de imagen y sonido",
     "descripcionEng": "A mapping of key references in image and sound design",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Rhizome",
     "url": "https://rhizome.org/",
     "descripcionEsp": "Núcleo internacional de arte de nuevos medios desde 1996",
     "descripcionEng": "International hub for new media art since 1996",
-    "tipo": ["community"]
+    "tipo": "community"
   },
   {
     "nombre": "Cyber-feminism Index",
     "url": "https://cyberfeminismindex.com/",
     "descripcionEsp": "Investigación sobre el activismo tecnocrático radical en una variedad de medios",
     "descripcionEng": "Research about radical techno-critical activism",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Booooooom",
     "url": "https://www.booooooom.com/",
     "descripcionEsp": "Plataforma global (?) sobre arte y cultura",
     "descripcionEng": "Global arts & culture platform",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Experiments with Google",
     "url": "https://experiments.withgoogle.com/experiments",
     "descripcionEsp": "Experimentos sobre arte, tecnología, diseño y cultura patrocinados por Google",
     "descripcionEng": "Experiments about art, technology, design and culture",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Are.na",
     "url": "https://www.are.na/",
     "descripcionEsp": "'playlists de ideas', 'palacio de la memoria', colecciones hermosas",
     "descripcionEng": "'playlists, but for ideas', beautiful collections",
-    "tipo": ["poetics"]
+    "tipo": "poetics"
   },
   {
     "nombre": "Cornell Lab of Ornithology",
     "url": "https://www.birds.cornell.edu/home/",
     "descripcionEsp": "Mucho sobre pajaritos",
     "descripcionEng": "A lot about birds",
-    "tipo": ["universe"]
+    "tipo": "universe"
   },
   {
     "nombre": "NASA",
     "url": "https://www.nasa.gov/",
     "descripcionEsp": "La página de la NASA",
     "descripcionEng": "NASA's website",
-    "tipo": ["universe"]
+    "tipo": "universe"
   },
   {
     "nombre": "The Book of Shaders",
     "url": "https://thebookofshaders.com/",
     "descripcionEsp": "Una guía paso a paso a través del universo abstracto y complejo de los 'Fragment Shaders' escrita por Patricio Gonzáles Vivo",
     "descripcionEng": "Step-by-step guide through the universe of Fragment Shaders",
-    "tipo": ["learning"]
+    "tipo": "learning"
   },
   {
     "nombre": "Science and cooking lecture series",
     "url": "https://thebookofshaders.com/",
     "descripcionEsp": "Clases sobre ciencia y cocina de Harvard",
     "descripcionEng": "Science and cooking lecture series by Harvard",
-    "tipo": ["universe"]
+    "tipo": "universe"
   },
   {
     "nombre": "Feminist Principles of the Internet",
     "url": "https://www.feministinternet.net/",
     "descripcionEsp": "Principios para una Internet feminista",
     "descripcionEng": "Principles for a feminist Internet",
-    "tipo": ["community"]
+    "tipo": "community"
   },
   {
     "nombre": "Chia Amisola",
     "url": "https://everythingi.love/",
     "descripcionEsp": "Chia Amisola: artista",
     "descripcionEng": "Chia Amisola: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Yehwan Song",
     "url": "https://www.yhsong.com",
     "descripcionEsp": "Yehwan Song: artista",
     "descripcionEng": "Yehwan Song: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
 
   {
@@ -110,125 +110,125 @@
     "url": "https://www.gustavoromano.com.ar/",
     "descripcionEsp": "Gustavo Romano: artista",
     "descripcionEng": "Gustavo Romano: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Netescopio",
     "url": "http://netescopio.meiac.es/",
     "descripcionEsp": "archive de net art, arte digital y nuevos medios",
     "descripcionEng": "Archive of net art, digital art and new media",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "All about computer love",
     "url": "https://all-about-computer-love.glitch.me/",
     "descripcionEsp": "Ensayo interactivo en la consola sobre el amor por los computadores",
     "descripcionEng": "Interactive, console log essay about love for computers",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Window swap",
     "url": "https://www.window-swap.com/",
     "descripcionEsp": "Abre una ventana en alguna parte del mundo",
     "descripcionEng": "Open a window somewhere in the world",
-    "tipo": ["gaze"]
+    "tipo": "gaze"
   },
   {
     "nombre": "Submarine cables map",
     "url": "https://www.submarinecablemap.com/",
     "descripcionEsp": "Mapa de cables submarinos de Internet",
     "descripcionEng": "Submarine cables map",
-    "tipo": ["gaze"]
+    "tipo": "gaze"
   },
   {
     "nombre": "Cat bounce",
     "url": "https://cat-bounce.com/",
     "descripcionEsp": "Gatitos rebotando",
     "descripcionEng": "Bouncing cats",
-    "tipo": ["play"]
+    "tipo": "play"
   },
   {
     "nombre": "Amanita Design",
     "url": "https://amanita-design.net/",
     "descripcionEsp": "Estudio checo de desarrollo de juegos independientes",
     "descripcionEng": "Czech indie game developer studio",
-    "tipo": ["play"]
+    "tipo": "play"
   },
   {
     "nombre": "Lauren McCarthy",
     "url": "https://lauren-mccarthy.com/",
     "descripcionEsp": "Lauren McCarthy: artista",
     "descripcionEng": "Lauren McCarthy: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Kyle McDonald",
     "url": "https://kylemcdonald.net/",
     "descripcionEsp": "Kyle McDonald: artista",
     "descripcionEng": "Kyle McDonald: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Golan Levin",
     "url": "https://flong.com/",
     "descripcionEsp": "Golan Levin: artista",
     "descripcionEng": "Golan Levin: artist",
-    "tipo": ["artist"]
+    "tipo": "artist"
   },
   {
     "nombre": "Cargo",
     "url": "https://cargo.site/community/in-use",
     "descripcionEsp": "Diseño web",
     "descripcionEng": "Web design",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "LIFE picture collection ",
     "url": "https://www.life.com/",
     "descripcionEsp": "Imágenes de la revista LIFE",
     "descripcionEng": "Images from LIFE magazine ",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "Jenny Odell",
     "url": "https://www.jennyodell.com/index.html",
     "descripcionEsp": "Jenny Odell: artista",
     "descripcionEng": "Jenny Odell: artist",
-    "tipo": ["gaze"]
+    "tipo": "gaze"
   },
   {
     "nombre": "Exhausting a crowd",
     "url": "https://www.exhaustingacrowd.com/berlin",
     "descripcionEsp": "Una descripción colaborativa de 12 horas en... (literatura experimental)",
     "descripcionEng": "A crowdsourced description of 12 hours in ... (experimental literature)",
-    "tipo": ["gaze"]
+    "tipo": "gaze"
   },
   {
     "nombre": "Eyeo Festival",
     "url": "https://eyeofestival.com/",
     "descripcionEsp": "Gente haciendo cosas hermosas con tecnología",
     "descripcionEng": "People doing fascinating things with technology",
-    "tipo": ["archive"]
+    "tipo": "archive"
   },
   {
     "nombre": "COMPOST Magazine",
     "url": "https://three.compost.digital/",
     "descripcionEsp": "Revista que publica textos y obras que exploran la web como un bien común digital",
     "descripcionEng": "A magazine that explore the web as a digital commons",
-    "tipo": ["community"]
+    "tipo": "community"
   },
   {
     "nombre": "DWeb",
     "url": "https://getdweb.net/",
     "descripcionEsp": "Conectando personas, proyectos y protocolos para construir una web descentralizada",
     "descripcionEng": "Connecting people, projects and protocols to build a decentralized web",
-    "tipo": ["community"]
+    "tipo": "community"
   },
   {
     "nombre": "Milpamérica",
     "url": "https://milpamerica.org/",
     "descripcionEsp": "Semillero de Futuros Ancestrales",
     "descripcionEng": "Seedbed of Ancestral Futures",
-    "tipo": ["community"]
+    "tipo": "community"
   }
 ]

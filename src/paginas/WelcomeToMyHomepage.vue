@@ -10,6 +10,7 @@
 
 import { onMounted, ref, Ref } from 'vue';
 import type { Web } from '../utilidades/tipos';
+import { ordenarListaObjetos } from '../utilidades/ayudas';
 
 const listaWebs: Ref<Web[]> = ref([]);
 const botonAnterior: Ref<HTMLElement | undefined> = ref(undefined);
@@ -17,6 +18,10 @@ const botonSiguiente: Ref<HTMLElement | undefined> = ref(undefined);
 const colEsp: Ref<HTMLElement | undefined> = ref(undefined);
 const colEng: Ref<HTMLElement | undefined> = ref(undefined);
 const contenedorInicial: Ref<HTMLElement | undefined> = ref(undefined);
+const info: Ref<HTMLElement | undefined> = ref(undefined);
+const botonInfo: Ref<HTMLElement | undefined> = ref(undefined);
+const listaOrdenada: Ref<Web[]> = ref([]);
+const infovisible = ref(false);
 
 const textosEspInicio = [
   'Este es un sitio excéntrico, un sitio que sale de sí mismo.',
@@ -110,7 +115,6 @@ async function cargarDatosWebs(ruta: string) {
 
 function cambiarTexto(boton: string, i: number) {
   if (boton === 'anterior' && i >= 0) {
-    console.log(i);
     if (!colEsp.value || !colEng.value) return;
     colEsp.value.innerText = textosEspInicio[i];
     colEng.value.innerText = textosEngInicio[i];
@@ -120,11 +124,28 @@ function cambiarTexto(boton: string, i: number) {
     if (!colEsp.value || !colEng.value) return;
     colEsp.value.innerText = textosEspInicio[i];
     colEng.value.innerText = textosEngInicio[i];
-    console.log(i);
     frase++;
   } else if (boton === 'siguiente' && i === textosEngInicio.length) {
     if (!contenedorInicial.value) return;
     contenedorInicial.value.style.display = 'none';
+  }
+}
+
+function abrirInfo() {
+  infovisible.value = !infovisible.value;
+}
+
+function clicFuera(evento: MouseEvent) {
+  evento.stopPropagation();
+  if (!info.value) return;
+  const elemento = evento.target as HTMLElement;
+
+  if (elemento === botonInfo.value) return;
+
+  if (!(info.value === elemento || info.value.contains(elemento))) {
+    if (infovisible) {
+      infovisible.value = false;
+    }
   }
 }
 
@@ -135,7 +156,13 @@ onMounted(async () => {
   if (!colEsp.value || !colEng.value) return;
   colEsp.value.innerText = textosEspInicio[0];
   colEng.value.innerText = textosEngInicio[0];
-  console.log(listaWebs.value);
+
+  if (listaWebs.value) {
+    listaOrdenada.value = JSON.parse(JSON.stringify(listaWebs.value));
+    ordenarListaObjetos(listaOrdenada.value, 'tipo', true);
+  }
+
+  document.body.addEventListener('click', clicFuera);
 });
 </script>
 
@@ -158,10 +185,30 @@ onMounted(async () => {
       </div>
       <div id="contenedorLista">
         <ul>
-          <li v-for="web in listaWebs" class="">
-            <a :href="web.url">{{ web.nombre }} </a> <span v-for="tipo in web.tipo" class="tipo">{{ tipo }}</span>
+          <li v-for="web in listaOrdenada" class="">
+            <a :href="web.url" target="_blank">{{ web.nombre }} </a> <span class="tipo">{{ web.tipo }}</span>
           </li>
         </ul>
+      </div>
+      <div ref="botonInfo" class="boton" id="botonInfo" @click="abrirInfo">?</div>
+    </div>
+    <div ref="info" id="info" v-if="infovisible">
+      <h2>Welcome to my homepage</h2>
+      <div id="contenedorInfo">
+        <div class="columna">
+          <p>
+            El desarrollo de este proyecto comenzó en enero de 2025, durante la residencia
+            <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to my Homepage</a>, un programa
+            internacional de residencia online del Museum of Human Achievement de Austin, TX (USA)
+          </p>
+        </div>
+        <div class="columna">
+          <p>
+            The development of this project began in January, 2025, during the
+            <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to my Homepage Residency</a>, an
+            international online residency program hosted by The Museum of Human Achievement in Austin, TX (USA).
+          </p>
+        </div>
       </div>
     </div>
   </main>
@@ -172,24 +219,28 @@ onMounted(async () => {
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jura:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 main {
   background-color: #c0fa9f; // rgb(84, 171, 84);
-  //background-color: #fede7e; //#ffdd00; #F2E5BD;
-  background-image: url('/estaticos/fondo_cielo.jpg');
-  //background-color: #e6ccff;
+  background-image: url('/estaticos/fondo_cielo.png');
   margin: 0;
   min-height: 100vh;
   font-family: 'Ubuntu', serif;
   font-weight: 300;
   background-attachment: fixed;
-  // background-blend-mode: exclusion;
   background-size: cover;
-  //background-blend-mode: lighten;
-  background-color: #ff0000;
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #ff52008f;
+  }
+
+  ::selection {
+    color: white;
+    background: #ff52008f;
+  }
 }
 #contenedorInicial {
   align-items: center;
   border-radius: 15px;
   display: flex;
-  //font-family: Doto, serif;
   font-family: monospace;
   font-size: 0.9em;
   height: -moz-fit-content;
@@ -214,22 +265,29 @@ main {
     text-align: center;
     width: 23vw;
   }
+}
 
-  .boton {
-    cursor: pointer;
-    background-color: hsla(0, 0%, 100%, 0.7);
-    padding: 0.5em 0.7em;
-    border-radius: 50%;
+.boton {
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  padding: 0.5em 0.7em;
+  border-radius: 50%;
 
-    &:hover {
-      color: white;
-    }
+  &:hover {
+    color: #ff5200;
   }
+}
+
+#botonInfo {
+  height: 2em;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.4em 0.8em;
 }
 
 #contenido {
   display: flex;
-  //  background-color: #3b3e3956;
 }
 
 #contenedorNodos {
@@ -241,7 +299,6 @@ main {
 }
 
 #contenedorLista {
-  // font-family: Courier New, Courier, monospace;
   font-family: 'Doto', serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -249,7 +306,6 @@ main {
   font-variation-settings: 'ROND' 0;
   font-size: 0.8em;
   background-color: #ff52008f;
-  // background-color: #32499487;
   margin: 4em;
   border-radius: 15px;
   height: fit-content;
@@ -348,6 +404,27 @@ main {
       background-image: url('/estaticos/200.webp');
     }
   } */
+}
+
+#info {
+  position: fixed;
+  background-color: #ffffffc7;
+  color: #181818;
+  width: 63vw;
+  height: 94vh;
+  top: 1vw;
+  left: 1vw;
+  padding: 3em 0em 3em 5em;
+  border-radius: 15px;
+  font-family: monospace;
+
+  #contenedorInfo {
+    display: flex;
+  }
+
+  .columna {
+    margin-right: 6em;
+  }
 }
 
 @media screen and (min-width: $minTablet) {
