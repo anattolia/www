@@ -186,7 +186,7 @@ onMounted(async () => {
       <div id="contenedorLista">
         <ul>
           <li v-for="web in listaOrdenada" class="">
-            <a :href="web.url" target="_blank">{{ web.nombre }} </a> <span class="tipo">{{ web.tipo[0] }}</span>
+            <a :href="web.url" target="_blank">{{ web.nombre }} </a> <span class="tipo">{{ web.tipo }}</span>
           </li>
         </ul>
       </div>
