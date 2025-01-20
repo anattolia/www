@@ -179,7 +179,7 @@ onMounted(async () => {
     </div>
     <div id="contenido">
       <div id="contenedorNodos">
-        <a v-for="web in listaWebs" class="nodo" :class="web.tipo[0]" :href="web.url" target="_blank">
+        <a v-for="web in listaWebs" class="nodo" :class="web.tipo" :href="web.url" target="_blank">
           <p class="descripcionPuerta">{{ web.descripcionEng }}</p>
         </a>
       </div>
