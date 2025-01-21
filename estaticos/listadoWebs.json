@@ -35,20 +35,6 @@
     "tipo": "archive"
   },
   {
-    "nombre": "Booooooom",
-    "url": "https://www.booooooom.com/",
-    "descripcionEsp": "Plataforma global (?) sobre arte y cultura",
-    "descripcionEng": "Global arts & culture platform",
-    "tipo": "archive"
-  },
-  {
-    "nombre": "Experiments with Google",
-    "url": "https://experiments.withgoogle.com/experiments",
-    "descripcionEsp": "Experimentos sobre arte, tecnología, diseño y cultura patrocinados por Google",
-    "descripcionEng": "Experiments about art, technology, design and culture",
-    "tipo": "archive"
-  },
-  {
     "nombre": "Are.na",
     "url": "https://www.are.na/",
     "descripcionEsp": "'playlists de ideas', 'palacio de la memoria', colecciones hermosas",
@@ -63,18 +49,18 @@
     "tipo": "universe"
   },
   {
+    "nombre": "Booooooom",
+    "url": "https://www.booooooom.com/",
+    "descripcionEsp": "Linda colección de referentes de arte y diseño",
+    "descripcionEng": "Cool art and design collection",
+    "tipo": "archive"
+  },
+  {
     "nombre": "NASA",
     "url": "https://www.nasa.gov/",
     "descripcionEsp": "La página de la NASA",
     "descripcionEng": "NASA's website",
     "tipo": "universe"
-  },
-  {
-    "nombre": "The Book of Shaders",
-    "url": "https://thebookofshaders.com/",
-    "descripcionEsp": "Una guía paso a paso a través del universo abstracto y complejo de los 'Fragment Shaders' escrita por Patricio Gonzáles Vivo",
-    "descripcionEng": "Step-by-step guide through the universe of Fragment Shaders",
-    "tipo": "learning"
   },
   {
     "nombre": "Science and cooking lecture series",
@@ -84,13 +70,6 @@
     "tipo": "universe"
   },
   {
-    "nombre": "Feminist Principles of the Internet",
-    "url": "https://www.feministinternet.net/",
-    "descripcionEsp": "Principios para una Internet feminista",
-    "descripcionEng": "Principles for a feminist Internet",
-    "tipo": "community"
-  },
-  {
     "nombre": "Chia Amisola",
     "url": "https://everythingi.love/",
     "descripcionEsp": "Chia Amisola: artista",
@@ -98,13 +77,19 @@
     "tipo": "artist"
   },
   {
+    "nombre": "Feminist Principles of the Internet",
+    "url": "https://www.feministinternet.net/",
+    "descripcionEsp": "Principios para una Internet feminista",
+    "descripcionEng": "Principles for a feminist Internet",
+    "tipo": "community"
+  },
+  {
     "nombre": "Yehwan Song",
     "url": "https://www.yhsong.com",
     "descripcionEsp": "Yehwan Song: artista",
-    "descripcionEng": "Yehwan Song: artist",
+    "descripcionEng": "Yehwan Song: artist | designer",
     "tipo": "artist"
   },
-
   {
     "nombre": "Gustavo Romano",
     "url": "https://www.gustavoromano.com.ar/",
@@ -124,21 +109,28 @@
     "url": "https://all-about-computer-love.glitch.me/",
     "descripcionEsp": "Ensayo interactivo en la consola sobre el amor por los computadores",
     "descripcionEng": "Interactive, console log essay about love for computers",
-    "tipo": "artist"
+    "tipo": "poetics"
   },
   {
-    "nombre": "Window swap",
-    "url": "https://www.window-swap.com/",
-    "descripcionEsp": "Abre una ventana en alguna parte del mundo",
-    "descripcionEng": "Open a window somewhere in the world",
-    "tipo": "gaze"
+    "nombre": "COMPOST Magazine",
+    "url": "https://three.compost.digital/",
+    "descripcionEsp": "Revista que publica textos y obras que exploran la web como un bien común digital",
+    "descripcionEng": "A magazine that explore the web as a digital commons",
+    "tipo": "community"
   },
   {
-    "nombre": "Submarine cables map",
-    "url": "https://www.submarinecablemap.com/",
-    "descripcionEsp": "Mapa de cables submarinos de Internet",
-    "descripcionEng": "Submarine cables map",
-    "tipo": "gaze"
+    "nombre": "DWeb",
+    "url": "https://getdweb.net/",
+    "descripcionEsp": "Conectando personas, proyectos y protocolos para construir una web descentralizada",
+    "descripcionEng": "Connecting people, projects and protocols for a decentralized web",
+    "tipo": "community"
+  },
+  {
+    "nombre": "Hotglue",
+    "url": "https://hotglue.me/",
+    "descripcionEsp": "Herramienta para publicación web y samizdat en Internet",
+    "descripcionEng": "Tool for web publishing & internet samizdat",
+    "tipo": "tool"
   },
   {
     "nombre": "Cat bounce",
@@ -176,10 +168,24 @@
     "tipo": "artist"
   },
   {
+    "nombre": "Naive Weekly",
+    "url": "https://www.naiveweekly.com/",
+    "descripcionEsp": "Newsletter dominical con enlaces a la web tranquila, extraña y poética",
+    "descripcionEng": "A Sunday email with links to the quiet, odd and poetic web",
+    "tipo": "newsletter"
+  },
+  {
+    "nombre": "Escape the algorithm",
+    "url": " https://escapethealgorithm.substack.com/?utm_source=homepage_recommendations&utm_campaign=3348",
+    "descripcionEsp": "Newsletter sobre tomar el control de nuestra atención",
+    "descripcionEng": "Newsletter about taking control of our attention",
+    "tipo": "newsletter"
+  },
+  {
     "nombre": "Cargo",
     "url": "https://cargo.site/community/in-use",
-    "descripcionEsp": "Diseño web",
-    "descripcionEng": "Web design",
+    "descripcionEsp": "Plantillas y buenos ejemplos de diseño web",
+    "descripcionEng": "Web design templates and good examples",
     "tipo": "archive"
   },
   {
@@ -200,29 +206,36 @@
     "nombre": "Exhausting a crowd",
     "url": "https://www.exhaustingacrowd.com/berlin",
     "descripcionEsp": "Una descripción colaborativa de 12 horas en... (literatura experimental)",
-    "descripcionEng": "A crowdsourced description of 12 hours in ... (experimental literature)",
+    "descripcionEng": "Crowdsourced description of 12 hours in ... (experimental literature)",
     "tipo": "gaze"
+  },
+  {
+    "nombre": "Window swap",
+    "url": "https://www.window-swap.com/",
+    "descripcionEsp": "Abre una ventana en alguna parte del mundo",
+    "descripcionEng": "Open a window somewhere in the world",
+    "tipo": "gaze"
+  },
+  {
+    "nombre": "Experiments with Google",
+    "url": "https://experiments.withgoogle.com/experiments",
+    "descripcionEsp": "Experimentos sobre arte, tecnología, diseño y cultura patrocinados por Google",
+    "descripcionEng": "Experiments about art, tech, design and culture paid by Google",
+    "tipo": "archive"
+  },
+  {
+    "nombre": "The Book of Shaders",
+    "url": "https://thebookofshaders.com/",
+    "descripcionEsp": "Una guía paso a paso a través del universo abstracto y complejo de los 'Fragment Shaders' escrita por Patricio Gonzáles Vivo",
+    "descripcionEng": "Step-by-step guide through the universe of Fragment Shaders",
+    "tipo": "learning"
   },
   {
     "nombre": "Eyeo Festival",
     "url": "https://eyeofestival.com/",
     "descripcionEsp": "Gente haciendo cosas hermosas con tecnología",
-    "descripcionEng": "People doing fascinating things with technology",
+    "descripcionEng": "People doing things with technology",
     "tipo": "archive"
-  },
-  {
-    "nombre": "COMPOST Magazine",
-    "url": "https://three.compost.digital/",
-    "descripcionEsp": "Revista que publica textos y obras que exploran la web como un bien común digital",
-    "descripcionEng": "A magazine that explore the web as a digital commons",
-    "tipo": "community"
-  },
-  {
-    "nombre": "DWeb",
-    "url": "https://getdweb.net/",
-    "descripcionEsp": "Conectando personas, proyectos y protocolos para construir una web descentralizada",
-    "descripcionEng": "Connecting people, projects and protocols to build a decentralized web",
-    "tipo": "community"
   },
   {
     "nombre": "Milpamérica",
@@ -230,5 +243,12 @@
     "descripcionEsp": "Semillero de Futuros Ancestrales",
     "descripcionEng": "Seedbed of Ancestral Futures",
     "tipo": "community"
+  },
+  {
+    "nombre": "Submarine cables map",
+    "url": "https://www.submarinecablemap.com/",
+    "descripcionEsp": "Mapa de cables submarinos de Internet",
+    "descripcionEng": "Submarine cables map",
+    "tipo": "gaze"
   }
 ]

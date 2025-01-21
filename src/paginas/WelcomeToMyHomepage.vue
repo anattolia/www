@@ -199,8 +199,30 @@ onMounted(async () => {
           <p>
             El desarrollo de este proyecto comenzó en enero de 2025, durante la residencia
             <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to my Homepage</a>, un programa
-            internacional de residencia online del Museum of Human Achievement de Austin, TX (USA)
+            internacional de residencia online del Museum of Human Achievement de Austin, TX (USA).
           </p>
+          <p>
+            La idea inicial fue hacer una colección de mis sitios preferidos de Internet, una especie de guía de
+            navegación hacia cosas que me divierten, me sorprenden o me emocionan.
+          </p>
+          <p>
+            Nació de la nostalgia por el Internet de los 2000, por los foros, los blogs, los anillos de webs, las listas
+            de recomendaciones de webs amigas.
+          </p>
+          <p>
+            Los mapas de Internet son efímeros. La permanencia de los sitios depende de la voluntad y los recursos, y
+            esto muchas veces es más fácil para las grandes corporaciones que para los esfuerzos independientes.
+          </p>
+          <p>
+            Quizás esta página vaya convirtiéndose en un cementerio de webs, en una colección de enlaces que lleven a
+            ninguna parte.
+          </p>
+          <p>
+            Sin embargo, este sitio web invita a celebrar lo efímero, lo que existe temporalmente, lo que tiene sentido
+            mientras es necesario y luego simplemente se deja ir o extinguir.
+          </p>
+          <p>Espero que disfruten.</p>
+          <p>Antonia</p>
         </div>
         <div class="columna">
           <p>
@@ -208,6 +230,25 @@ onMounted(async () => {
             <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to my Homepage Residency</a>, an
             international online residency program hosted by The Museum of Human Achievement in Austin, TX (USA).
           </p>
+          <p>
+            The initial idea was to make a collection of my favorite sites on the Internet, something as a navigation
+            guide that invite people to discover or revisit things that amuse me, surprise me or excite me.
+          </p>
+          <p>
+            It was born out of nostalgia for the Internet of the 2000s, for forums, blogs, web rings, and lists that
+            recommended the friend's websites.
+          </p>
+          <p>
+            The maps of Internet are ephemeral. The permanence of sites depends on will and resources, and this is often
+            easier for large corporations than for independent efforts.
+          </p>
+          <p>Perhaps this page will become a cemetery of websites, a collection of links that take you to nowhere.</p>
+          <p>
+            However, this website invites to celebrate the ephemeral, what exists temporarily, what makes sense while it
+            is necessary and then you simply let go or extinguish.
+          </p>
+          <p>I hope you enjoy.</p>
+          <p>Antonia</p>
         </div>
       </div>
     </div>
@@ -417,6 +458,7 @@ main {
   padding: 3em 0em 3em 5em;
   border-radius: 15px;
   font-family: monospace;
+  overflow-y: auto;
 
   #contenedorInfo {
     display: flex;
