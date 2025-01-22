@@ -282,7 +282,7 @@ main {
   padding: 2em 0;
   position: fixed;
   top: 0vh;
-  width: 63vw;
+  width: 92vw;
 
   #contenedorColumnas {
     display: flex;
@@ -296,7 +296,7 @@ main {
     margin: 1.5em 1em;
     padding: 1px 1em;
     text-align: center;
-    width: 23vw;
+    width: 33vw;
   }
 }
 
@@ -326,9 +326,46 @@ main {
 #contenedorNodos {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5vw;
-  padding: 8em 3em;
-  width: 75vw;
+  margin-left: 0vw;
+  padding: 10em 1em;
+  width: 58vw;
+}
+
+.nodo {
+  width: 85px;
+  height: 120px;
+  border-radius: 16px;
+  margin: 1em 0.7em;
+  background-image: url('/estaticos/puertabold.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor:
+    url('/estaticos/cursor_cafe.cur') 7 7,
+    pointer;
+
+  .descripcionPuerta {
+    background-color: rgba(255, 82, 0, 0.561);
+    border-radius: 16px;
+    color: #fff;
+    display: block;
+    font-family: Doto, serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    height: 116px;
+    width: 85px;
+  }
+
+  &:hover {
+    background-image: none;
+    .descripcionPuerta {
+      opacity: 1;
+    }
+  }
 }
 
 #contenedorLista {
@@ -339,18 +376,18 @@ main {
   font-variation-settings: 'ROND' 0;
   font-size: 0.8em;
   background-color: #ff52008f;
-  margin: 4em;
   border-radius: 15px;
   height: fit-content;
-  margin: 5em 5vw;
-  padding: 3em;
-  width: 22vw;
+  margin: 15em 3vw;
+  padding: 1.5em;
+  width: 35vw;
+
   li {
     margin-bottom: 0.5em;
     border-bottom: 1px solid white;
     color: white;
-    //list-style: square;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   a {
@@ -369,69 +406,143 @@ main {
   }
   .tipo {
     font-size: 0.9em;
-  }
-}
-
-.nodo {
-  width: 116px;
-  height: 120px;
-  border-radius: 16px;
-  margin: 1em 0.7em;
-  background-image: url('/estaticos/puertabold.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor:
-    url('/estaticos/cursor_cafe.cur') 7 7,
-    pointer;
-
-  .descripcionPuerta {
-    background-color: rgba(255, 82, 0, 0.561);
-    border-radius: 16px;
-    color: #fff;
-    display: block;
-    font-family: Doto, serif;
-    font-size: 0.8em;
-    font-weight: 600;
-    margin: 0 auto;
-    opacity: 0;
-    padding: 1em;
-    text-align: center;
-    height: 116px;
-    width: 120px;
-  }
-
-  &:hover {
-    background-image: none;
-    .descripcionPuerta {
-      opacity: 1;
-    }
+    font-style: italic;
   }
 }
 
 #info {
   position: fixed;
   background-color: #ffffffc7;
-  color: #181818;
-  width: 63vw;
-  height: 94vh;
-  top: 1vw;
-  left: 1vw;
-  padding: 3em 0em 3em 5em;
   border-radius: 15px;
+  color: #181818;
   font-family: monospace;
+  height: 80vh;
+  left: 1vw;
   overflow-y: auto;
+  padding: 3em 0 3em 3em;
+  position: fixed;
+  top: 1vw;
+  width: 96vw;
+  margin: 1vw;
 
   #contenedorInfo {
     display: flex;
   }
 
   .columna {
-    margin-right: 6em;
+    margin-right: 5em;
   }
 }
 
 @media screen and (min-width: $minTablet) {
+  #contenedorInicial {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    font-family: monospace;
+    font-size: 0.9em;
+    height: -moz-fit-content;
+    justify-content: space-between;
+    left: 4vw;
+    padding: 2em 0;
+    position: fixed;
+    top: 0vh;
+    width: 63vw;
+
+    #contenedorColumnas {
+      display: flex;
+    }
+
+    .columna {
+      background-color: hsla(0, 0%, 100%, 0.7);
+      border-radius: 5px;
+      box-shadow: 2px 2px 3px #fff;
+      font-size: 1.1em;
+      margin: 1.5em 1em;
+      padding: 1px 1em;
+      text-align: center;
+      width: 23vw;
+    }
+  }
+
+  #contenedorNodos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    padding: 8em 3em;
+    width: 75vw;
+  }
+
+  .nodo {
+    width: 116px;
+    height: 110px;
+    border-radius: 16px;
+    margin: 0em 0.4em;
+    background-image: url('/estaticos/puertabold.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor:
+      url('/estaticos/cursor_cafe.cur') 7 7,
+      pointer;
+
+    .descripcionPuerta {
+      background-color: rgba(255, 82, 0, 0.561);
+      border-radius: 16px;
+      color: #fff;
+      display: block;
+      font-family: Doto, serif;
+      font-size: 0.8em;
+      font-weight: 600;
+      margin: 0 auto;
+      opacity: 0;
+      padding: 1em;
+      text-align: center;
+      height: 116px;
+      width: 120px;
+    }
+
+    &:hover {
+      background-image: none;
+      .descripcionPuerta {
+        opacity: 1;
+      }
+    }
+  }
+
+  #contenedorLista {
+    font-family: 'Doto', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: 'ROND' 0;
+    font-size: 0.8em;
+    background-color: #ff52008f;
+    border-radius: 15px;
+    height: fit-content;
+    margin: 5em 5vw;
+    padding: 3em;
+    width: 22vw;
+
+    li {
+      flex-direction: row;
+    }
+    .tipo {
+      font-style: normal;
+    }
+  }
+
+  #info {
+    width: 63vw;
+    height: 94vh;
+    top: 1vw;
+    left: 1vw;
+    padding: 3em 0em 3em 5em;
+
+    .columna {
+      margin-right: 6em;
+    }
+  }
 }
 
 @media screen and (min-width: $minPantalla) {
