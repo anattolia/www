@@ -226,26 +226,26 @@ onMounted(async () => {
         </div>
         <div class="columna">
           <p>
-            The development of this project began in January, 2025, during the
-            <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to my Homepage Residency</a>, an
+            The development of this project began in January 2025, during the
+            <a href="https://www.welcometomyhomepage.net/about-residency">Welcome to My Homepage Residency</a>, an
             international online residency program hosted by The Museum of Human Achievement in Austin, TX (USA).
           </p>
           <p>
             The initial idea was to make a collection of my favorite sites on the Internet, something as a navigation
-            guide that invite people to discover or revisit things that amuse me, surprise me or excite me.
+            guide that invites people to discover or revisit things that amuse me, surprise me, or excite me.
           </p>
           <p>
             It was born out of nostalgia for the Internet of the 2000s, for forums, blogs, web rings, and lists that
             recommended the friend's websites.
           </p>
           <p>
-            The maps of Internet are ephemeral. The permanence of sites depends on will and resources, and this is often
+            The maps of the Internet are ephemeral. The permanence of sites depends on will and resources, which is often
             easier for large corporations than for independent efforts.
           </p>
-          <p>Perhaps this page will become a cemetery of websites, a collection of links that take you to nowhere.</p>
+          <p>Perhaps this page will become a cemetery of websites, a collection of links that take you nowhere.</p>
           <p>
-            However, this website invites to celebrate the ephemeral, what exists temporarily, what makes sense while it
-            is necessary and then you simply let go or extinguish.
+            However, this website invites you to celebrate the ephemeral, what exists temporarily, what makes sense while it
+            is necessary, and then you simply let go or extinguish.
           </p>
           <p>I hope you enjoy.</p>
           <p>Antonia</p>
