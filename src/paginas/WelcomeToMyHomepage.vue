@@ -1,10 +1,5 @@
 <script setup lang="ts">
 /* POR HACER: 
-- Probar otras fuentes para los textos
-- Menú con info
-- A cada enlace asignarle un gif?
-- Ir haciendo aparecer las puertas?
-- enlaces: https://www.welcometomyhomepage.net/about-residency
 - https://www.welcometomyhomepage.net/apply
 */
 
@@ -149,8 +144,6 @@ function clicFuera(evento: MouseEvent) {
   }
 }
 
-//function revelarPuerta() {}
-
 onMounted(async () => {
   listaWebs.value = await cargarDatosWebs('listadoWebs.json');
   if (!colEsp.value || !colEng.value) return;
@@ -268,7 +261,6 @@ main {
   background-attachment: fixed;
   background-size: cover;
   ::-moz-selection {
-    /* Code for Firefox */
     color: white;
     background: #ff52008f;
   }
@@ -384,16 +376,16 @@ main {
   width: 116px;
   height: 120px;
   border-radius: 16px;
-  //border-radius: 50%;
-  //border: white 1px solid;
   margin: 1em 0.7em;
   background-image: url('/estaticos/puertabold.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  cursor: pointer;
+  cursor:url('/estaticos/cursor_cafe.cur') 7 7, pointer;
+  
 
   .descripcionPuerta {
+    
     background-color: rgba(255, 82, 0, 0.561);
     border-radius: 16px;
     color: #fff;
@@ -415,36 +407,6 @@ main {
       opacity: 1;
     }
   }
-
-  /* &.artist {
-    &:hover {
-      background-image: url('/estaticos/200.webp');
-    }
-  }
-
-  &.archive {
-    &:hover {
-      background-image: url('/estaticos/heart.png');
-    }
-  }
-
-  &.gaze {
-    &:hover {
-      background-image: url('/estaticos/200.webp');
-    }
-  }
-
-  &.community {
-    &:hover {
-      background-image: url('/estaticos/synchronized_cats.gif');
-    }
-  }
-
-  &.gaze {
-    &:hover {
-      background-image: url('/estaticos/200.webp');
-    }
-  } */
 }
 
 #info {
