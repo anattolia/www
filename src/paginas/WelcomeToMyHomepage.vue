@@ -381,11 +381,11 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  cursor:url('/estaticos/cursor_cafe.cur') 7 7, pointer;
-  
+  cursor:
+    url('/estaticos/cursor_cafe.cur') 7 7,
+    pointer;
 
   .descripcionPuerta {
-    
     background-color: rgba(255, 82, 0, 0.561);
     border-radius: 16px;
     color: #fff;
