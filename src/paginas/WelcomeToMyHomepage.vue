@@ -239,13 +239,13 @@ onMounted(async () => {
             recommended the friend's websites.
           </p>
           <p>
-            The maps of the Internet are ephemeral. The permanence of sites depends on will and resources, which is often
-            easier for large corporations than for independent efforts.
+            The maps of the Internet are ephemeral. The permanence of sites depends on will and resources, which is
+            often easier for large corporations than for independent efforts.
           </p>
           <p>Perhaps this page will become a cemetery of websites, a collection of links that take you nowhere.</p>
           <p>
-            However, this website invites you to celebrate the ephemeral, what exists temporarily, what makes sense while it
-            is necessary, and then you simply let go or extinguish.
+            However, this website invites you to celebrate the ephemeral, what exists temporarily, what makes sense
+            while it is necessary, and then you simply let go or extinguish.
           </p>
           <p>I hope you enjoy.</p>
           <p>Antonia</p>
