@@ -33,6 +33,19 @@ h1 {
   text-align: center;
 }
 
+#menu {
+  display: flex;
+    margin: 4em;
+    justify-content: flex-start;
+
+    a {
+      margin-right: 2em;
+    }
+    a:hover {
+      color: red;
+    }
+}
+
 #contenedorInicio {
   margin: 0;
   background-color: #ffe57b;
