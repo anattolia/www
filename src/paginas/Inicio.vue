@@ -35,15 +35,15 @@ h1 {
 
 #menu {
   display: flex;
-    margin: 4em;
-    justify-content: flex-start;
+  margin: 4em;
+  justify-content: flex-start;
 
-    a {
-      margin-right: 2em;
-    }
-    a:hover {
-      color: red;
-    }
+  a {
+    margin-right: 2em;
+  }
+  a:hover {
+    color: red;
+  }
 }
 
 #contenedorInicio {
