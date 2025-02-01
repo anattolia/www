@@ -11,11 +11,11 @@
         in Philosophy and work mixing live music, teaching, researching, and developing web projects.
       </p>
       <p class="columna">
-        Soy programadora e ingeniera de sonido de Bogotá (Colombia). Mi práctica creativa se centra en la
-        comprensión crítica y práctica de la intersección entre las artes y las tecnologías. Me interesan las formas
-        colectivas de trabajo, las prácticas de escucha y las formas experimentales y locales de utilizar las
-        tecnologías. Actualmente, estudio una maestría en Filosofía y trabajo mezclando música en vivo, enseñando,
-        investigando y desarrollando proyectos web.
+        Soy programadora e ingeniera de sonido de Bogotá (Colombia). Mi práctica creativa se centra en la comprensión
+        crítica y práctica de la intersección entre las artes y las tecnologías. Me interesan las formas colectivas de
+        trabajo, las prácticas de escucha y las formas experimentales y locales de utilizar las tecnologías.
+        Actualmente, estudio una maestría en Filosofía y trabajo mezclando música en vivo, enseñando, investigando y
+        desarrollando proyectos web.
       </p>
     </div>
     <nav id="menu" ref="menu">
